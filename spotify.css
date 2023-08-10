@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round &display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #181817;
+}
+nav{
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    color: white;
+}
+nav ul li{
+    padding: 0 15px;
+}
+.Brand img{
+    width:45px;
+    height: 45px;
+    padding: 0 10px;
+}
+.Brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.bottom{
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    min-height: 70vh;
+    background-color: #0c0c0c;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    background-image: url('MusicWall.jpg');
+    background-size: cover;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+#progressBar{
+    width: 70vw;
+    cursor: pointer;
+}
+.songItem{
+    height: 60px;
+    display: flex;
+    background-color: rgb(14, 14, 14);
+    width: 80%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.songItem img{
+    width: 45px;
+    margin: 0 25px;
+    border-radius: 40px;
+}
+.songListPlay{
+    position: relative;
+    right: 5px;
+}
+.songListPlay i{
+    cursor: pointer;
+}
+.AllSongContainer{
+    margin-top: 55px;
+}
+.songInfo{
+    position: absolute;
+    left: 9vw;
+    display: flex;
+    align-items: center;
+    font-family:cursive;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
